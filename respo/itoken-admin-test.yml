@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: itoken-admin
+  zipkin:
+    base-url: http://120.79.213.52:9411
+
+server:
+  port: 8084
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://120.79.213.52:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
