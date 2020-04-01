@@ -18,7 +18,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://120.79.213.52:8761/eureka/,http://120.79.213.52:8861/eureka/,http://120.79.213.52:8961/eureka/
 
 management:
   endpoint:
